@@ -26,6 +26,11 @@ namespace MiddlewareInputOutputAlterDemo.Controllers
         }
 
         // POST api/values
+        /// <summary>
+        /// 把FromBody修改成了FromForm  因为这里测试是用form提交的
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task Post([FromForm] string value)
         {
